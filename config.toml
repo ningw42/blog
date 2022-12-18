@@ -6,7 +6,7 @@ theme = "PaperMod"
 
 [params.homeInfoParams]
   enabled = true
-  title = "Hi there"
+  title = "Hi there, "
   content = "This is a Software Engineer below average."
 
 [markup]
