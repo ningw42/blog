@@ -42,7 +42,7 @@ tags: [NAS, Linux, Networking]
 | CPU Cooler | Themalright AXP90 X53      | 机箱限高，只能用下压式                       | 159        |
 | MB         | MSI X570 Unify             | 主力机淘汰                                   | 0          |
 | Memory     | Kingston 32GB DDR4@3200MHz | 主力机淘汰                                   | 0          |
-| GPU        | MSI Intel DG2 A380         | 半高双槽，最强的编解码能力，没有之一（应该） | 899        |
+| GPU        | MSI Intel Arc A380 (DG2)   | 半高双槽，最强的编解码能力，没有之一（应该） | 899        |
 | HBA Card   | LSI 2308                   | 刷 IT Mode，便宜                             | 75         |
 | Data Drive | Seagate EXOS X18 16TB * 8  | 比 HC550 “安静”                              | 1670 * 8   |
 | Boot Drive | KIOXIA RC20 1TB            | 便宜可靠                                     | 429        |
@@ -50,10 +50,10 @@ tags: [NAS, Linux, Networking]
 
 ### Networking
 
-| Component | Model              | Remarks                                      | Cost (CNY) |
-| :-------- | :----------------- | :------------------------------------------- | :--------- |
-| NIC       | Intel X520 DA1 * 2 | 最便宜的 10GbE NIC                           | 130 * 2    |
-| Switch    | QNAP M408S         | 至少三个 SFP+ 和 至少 8 个 RJ45 中最便宜的？ | 1550       |
+| Component | Model              | Remarks                                     | Cost (CNY) |
+| :-------- | :----------------- | :------------------------------------------ | :--------- |
+| NIC       | Intel X520 DA1 * 2 | 最便宜的 10GbE NIC                          | 130 * 2    |
+| Switch    | QNAP QSW-M408S     | 至少三个 SFP+ 和至少 8 个 RJ45 中最便宜的？ | 1550       |
 
 ## Host OS 选择
 
