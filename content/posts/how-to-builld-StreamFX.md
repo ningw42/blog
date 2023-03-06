@@ -15,13 +15,13 @@ There is a [official guide](https://github.com/Xaymar/obs-StreamFX/wiki/Building
 All the following instructions are a de-templatized version of the original action, and they are Windows x64 only. That said, the idea still applies to Linux or macOS.
 
 1. Install all the [prerequisites](https://github.com/Xaymar/obs-StreamFX/wiki/Building#1-install-prerequisites--dependencies) for your platform.
-   1. You need two tarballs, named after `$OS-deps-$VERSION-$ARCH.tar.zx` and `$OS-deps-qt6-$VERSION-$ARCH.tar.zx`. Extract them into two different pathes, noted as `$OBS` and `$OBS_QT6`. For a Windows build, the expected version of OBS dependencies is overrided by [obs-StreamFX/third-party/DEPS_VERSION_WIN](https://github.com/Xaymar/obs-StreamFX/blob/root/third-party/DEPS_VERSION_WIN).
+   1. You need two tarballs, named after `$OS-deps-$VERSION-$ARCH.tar.zx` and `$OS-deps-qt6-$VERSION-$ARCH.tar.zx`. Extract them into two different paths, noted as `$OBS` and `$OBS_QT6`. For a Windows build, the expected version of OBS dependencies is overrided by [obs-StreamFX/third-party/DEPS_VERSION_WIN](https://github.com/Xaymar/obs-StreamFX/blob/root/third-party/DEPS_VERSION_WIN).
    2. If you want to make a Windows installer, [Inno Setup](https://jrsoftware.org/isinfo.php) is required.
    3. [LLVM](https://releases.llvm.org/) is optional. The official pipeline uses LLVM 14. LLVM 15 works though. Make sure to install it if you don't want to change the following commands.
    4. Do make sure to check out all the submodules.
    5. You need a Windows SDK. The official pipeline uses `10.0.20348.0` which could be found [here](https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/).
 2. Build LibOBS (commands are Windows specific)
-   1. Run `cmake -S "$ROOT/third-party/obs-studio" -B "$ROOT/build/obs" -G "Visual Studio 17 2022" -A x64 -DCMAKE_SYSTEM_VERSION="10.0.20348.0" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="$ROOT/build/obs/install" -DENABLE_PLUGINS=OFF -DENABLE_UI=OFF -DENABLE_SCRIPTING=OFF -DCMAKE_PREFIX_PATH="$OBS;$OBS_QT6"` in PowerShell. `$ROOT` is where you cloned the StreamFX repository, `$OBS` and `$OBS_QT6` are pathes you just extracted the two tarballs to.
+   1. Run `cmake -S "$ROOT/third-party/obs-studio" -B "$ROOT/build/obs" -G "Visual Studio 17 2022" -A x64 -DCMAKE_SYSTEM_VERSION="10.0.20348.0" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_INSTALL_PREFIX="$ROOT/build/obs/install" -DENABLE_PLUGINS=OFF -DENABLE_UI=OFF -DENABLE_SCRIPTING=OFF -DCMAKE_PREFIX_PATH="$OBS;$OBS_QT6"` in PowerShell. `$ROOT` is where you cloned the StreamFX repository, `$OBS` and `$OBS_QT6` are paths you just extracted the two tarballs to.
    2. Run `cmake --build "$ROOT/build/obs" --config Release --target obs-frontend-api`
    3. Run `cmake --install "$ROOT/build/obs" --config Release --component obs_libraries`
 3. Build StreamFX
