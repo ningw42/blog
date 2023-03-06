@@ -6,7 +6,7 @@ tags: [OBS, StreamFX]
 
 ## Why
 
-The pre-built binaries of [StreamFX](https://github.com/Xaymar/obs-StreamFX) are only available to sponsors now. And the author purged all the 0.12 alpha/beta builds from GitHub. The only **free** option for OBS 27+ users is to build it from source. Okay, fair enough.
+The pre-built binaries of [StreamFX](https://github.com/Xaymar/obs-StreamFX) are only available to sponsors now. [And the author purged all the working 0.12 alpha builds from GitHub](https://web.archive.org/web/20230108104555/https://github.com/Xaymar/obs-StreamFX/releases). The only **free** option for OBS 27+ users is to build it from source. Okay, fair enough.
 
 ## How
 
