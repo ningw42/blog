@@ -29,4 +29,5 @@ All the following instructions are Windows x64 only, but the idea applies.
    2. Run `cmake --build "$ROOT/build/ci" --config RelWithDebInfo --target install`
 4. Packaging
    1. Run `& "$INNO" /V10 "$ROOT\build\ci\installer.iss"`. `$INNO` is your Inno Setup installation, on Windows, it is usually `C:\Program Files (x86)\Inno Setup 6\ISCC.exe`.
+   2. Enjoy your installer. :)
 
