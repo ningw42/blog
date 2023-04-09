@@ -10,7 +10,7 @@ headTitle = "Nichijou"
 description = "Daily (yearly) thoughts of my own."
 favicon = "/favicon.png"
 mainSelection = [ "posts" ]
-disqus = "ningw"
+disqus = "nichijou-site"
 [[params.socials]]
 name = "About"
 link = "/about"
