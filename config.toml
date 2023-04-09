@@ -1,13 +1,20 @@
 baseURL = 'https://blog.ningwang.me/'
 languageCode = 'zh-cn'
-title = 'Blog'
+DefaultContentLanguage = "cn"
+title = "Nichijou"
+theme = "yinyang"
+enableRobotsTXT = true
 
-theme = "PaperMod"
+[params]
+headTitle = "Nichijou"
+description = "Daily (yearly) thoughts of my own."
+favicon = "/favicon.png"
+mainSelection = [ "posts" ]
+disqus = "ningw"
+[[params.socials]]
+name = "About"
+link = "/about"
 
-[params.homeInfoParams]
-  enabled = true
-  title = "Hi there, "
-  content = "This is a Software Engineer below average."
 
 [markup]
   defaultMarkdownHandler = 'goldmark'
