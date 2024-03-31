@@ -24,6 +24,6 @@ Fortunately, the well-known RA implementation on Linux, [RADVD](https://linux.di
 
 There are some caveats:
 1. How to keep the prefix from the primary router?
-    a. In the `prefix` section of an interface, set an all-zero (e.g. `::/64`) prefix configures RADVD to advertise what ever that interface gets from the primary router.
+    * A: In the `prefix` section of an interface, set an all-zero (e.g. `::/64`) prefix configures RADVD to advertise what ever that interface gets from the primary router.
 2. How to hijack just a given set of devices in the LAN?
-    a. In the `clients` section of an interface, name the clients you want to route traffic from by their [link-local address](https://en.wikipedia.org/wiki/Link-local_address?useskin=vector). This configures RADVD to send RA to the list of unicase addresses.
+    * A: In the `clients` section of an interface, name the clients you want to route traffic from by their [link-local address](https://en.wikipedia.org/wiki/Link-local_address?useskin=vector). This configures RADVD to send RA to the list of unicase addresses.
