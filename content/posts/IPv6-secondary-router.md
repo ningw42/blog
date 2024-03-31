@@ -1,7 +1,7 @@
 ---
 title: "IPv6 Secondary Router"
 date: 2024-03-31T19:49:00+08:00
-tags: [Linux, Networking, Clash]
+tags: [Linux, Networking, Transparent Proxy]
 ---
 
 ## Why secondary router
@@ -10,11 +10,11 @@ A secondary router may help setting up a transparant proxy for a subset of the d
 
 ## IPv4
 
-In the world of IPv4, almost all LANs have a router running a DHCP server to assign LAN IPv4 addresses. With DHCPv4, the router can specify a default gateway for a given subnet. This effectively gives us the capability to route traffic from specific devices to any device on the LAN.
+In the world of IPv4, almost all LANs have a router running a DHCP server to assign LAN IPv4 addresses. With DHCPv4, the DHCP server can specify a default gateway for a given subnet. This effectively gives us the capability to route traffic from specific devices to any device in the LAN.
 
 ## IPv6
 
-In the world of IPv6, there is no need to keep a stateful private LAN address pool thanks to the huge address space of IPv6. That is, stateless address autoconfiguration (SLACC) is preferred. Despite there is DHCPv6, the fundamental mechanism Router Advertisement, RA (or Neighbor Discovery Protocol, NDP) doesn't support default router (gateway) like DHCPv4. The sender of the RA messages naturally becomes the router for all the clients that accepts the RA.
+In the world of IPv6, there is no need to keep a stateful private LAN address pool thanks to the huge address space of IPv6. That is, stateless address autoconfiguration (SLACC) is preferred. Despite there is DHCPv6, the fundamental mechanism both SLAAC and DHCPv6 relies on, Router Advertisement, RA (or Neighbor Discovery Protocol, NDP) doesn't support default router (gateway) like DHCPv4. The sender of the RA messages naturally becomes the router for all the clients that accepts the RA.
 
 So, the secondary router is still up and running. How can we route traffic from a specific set of devices to the transparant proxy on the secondary router in the world of IPv6?
 
