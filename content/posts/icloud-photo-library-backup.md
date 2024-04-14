@@ -25,7 +25,7 @@ tags: [Linux, Docker, icloud-photo-downloader, restic, immich]
 
 ## Backup iCloud Photo Library to NAS
 
-This is the hardest part thanks to Apple's walled garden ecosystem. But there are still two approaches to achive the backup.
+This is the hardest part thanks to Apple's walled garden ecosystem. But there are still two approaches to achieve the backup.
 1. Push to NAS. Push the iCloud Photo Library from an Apple device has the library.
 2. Pull from NAS. Pull the entire iCloud Photo Library from iCloud.
 
